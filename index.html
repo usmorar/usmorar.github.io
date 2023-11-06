@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Orar</title>
+  <link rel="shortcut icon" href="icon.png" />
+</head>
+<body><header>
+  <script type="text/javascript">
+    firstName="par&#259;";
+    secondName="impar&#259;";
+    startDate = new Date(2017,0,2); //first Monday of the year
+    currentDate = new Date(); 
+    weekNumber=Math.ceil((currentDate.getTime()-startDate.getTime())/86400000/7);
+    document.write("<div style='color:lightblue;text-align:center;font-style:italic;font-size:35px;'> Acum e saptamana "+((weekNumber % 2)? firstName : secondName) +"");
+    var ascunde = weekNumber % 2
+    if(ascunde == 0) {
+      document.getElementById("nimic").style.display = "none";
+    document.getElementById("imp").style.display = "none";}
+     else{document.getElementById("impar").style.display = "none";
+     document.getElementById("").style.display = "none";}
+   </script></header>
+<style>
+
+</style>
+  <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+    <div class="cd-schedule__timeline">
+      <ul>
+        <li><span>08:00</span></li>
+        <li><span>08:30</span></li>
+        <li><span>09:00</span></li>
+        <li><span>09:30</span></li>
+        <li><span>10:00</span></li>
+        <li><span>10:30</span></li>
+        <li><span>11:00</span></li>
+        <li><span>11:30</span></li>
+        <li><span>12:00</span></li>
+        <li><span>12:30</span></li>
+        <li><span>13:00</span></li>
+        <li><span>13:30</span></li>
+        <li><span>14:00</span></li>
+        <li><span>14:30</span></li>
+        <li><span>15:00</span></li>
+        <li><span>15:30</span></li>
+        <li><span>16:00</span></li>
+        <li><span>16:30</span></li>
+        <li><span>17:00</span></li>
+        <li><span>17:30</span></li>
+        <li><span>18:00</span></li>
+        <li><span>18:30</span></li>
+      </ul>
+    </div> <!-- .cd-schedule__timeline -->
+  
+    <div class="cd-schedule__events">
+      <ul>
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Luni</span></div>
+  
+          <ul>
+
+  
+            <li class="cd-schedule__event" id="parDaw">
+              <a data-start="11:30" data-end="13:00" data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">DAW<br>(laborator)<br>Hol 2</em>
+              </a>
+            </li>
+  
+            <li class="cd-schedule__event">
+              <a data-start="13:15" data-end="14:45"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">DAW<br>(laborator)<br>Hol 2</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="15:00" data-end="16:30" data-content="event-abs-circuit" data-event="event-1" href="#0">
+                <em class="cd-schedule__name">Cloud si SOD<br>(curs)<br>214/4</em>
+              </a>
+            </li>
+
+                        <li class="cd-schedule__event">
+              <a data-start="16:45" data-end="18:15" data-content="event-abs-circuit" data-event="event-1" href="#0">
+                <em class="cd-schedule__name">Cloud si SOD<br>(laborator)<br>251/4</em>
+              </a>
+            </li>
+  
+          </ul>
+        </li>
+  
+
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Marti</span></div>
+  
+          <ul>
+  
+            <li class="cd-schedule__event">
+              <a data-start="09:45" data-end="11:15"  data-content="event-restorative-yoga" data-event="event-4" href="#0">
+                <em class="cd-schedule__name">Grafica<br>(curs)<br>213a/4</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4" href="#0">
+                <em class="cd-schedule__name">Grafica<br>(laborator)<br>143/4</em>
+              </a>
+            </li>
+
+            <li class="cd-schedule__event">
+              <a data-start="13:15" data-end="14:45"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Cloud si SOD<br>(laborator)<br>Hol 2</em>
+              </a>
+            </li>
+
+          
+        
+        <li class="cd-schedule__event">
+          <a data-start="15:00" data-end="16:30"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+            <em class="cd-schedule__name">PPD<br>(laborator)<br>239/4</em>
+          </a>
+        </li>
+       </ul>
+       </li>
+
+
+  
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Joi</span></div>
+  
+          <ul>
+            <li class="cd-schedule__event"  id="">
+              <a data-start="13:15" data-end="14:45"  data-content="event-restorative-yoga" data-event="event-4" href="">
+                <em class="cd-schedule__name">PSI<br>(curs)<br>113/4</em>
+              </a></li>
+              <li class="cd-schedule__event">
+                <a data-start="15:00" data-end="16:30" data-content="event-yoga-1" data-event="event-3" href="#0">
+                  <em class="cd-schedule__name">DAW<br>(curs)<br>113/4</em>
+                </a>
+              </li>
+          </ul>
+        </li>
+  
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Vineri</span></div>
+  
+          <ul>
+            
+            <li class="cd-schedule__event" id="">
+              <a data-start="11:30" data-end="13:00"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Prog. paralel<br>(curs)<br>218/4</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event"  id="">
+              <a data-start="13:15" data-end="14:45" data-content="event-abs-circuit" data-event="event-1" href="#0">
+                <em class="cd-schedule__name">PSI<br>(laborator)<br>Hol. et. 2</em>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+        <li class="cd-schedule__group">
+          <div class="cd-schedule__top-info"><span>Sâmbăta</span></div>
+  
+          <ul>
+            
+            <li class="cd-schedule__event" id="">
+              <a data-start="08:00" data-end="09:30"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Java<br>(curs)<br>113/4</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event" id="">
+              <a data-start="09:45" data-end="11:15"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Java<br>(laborator)<br>327/4</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event" id="parJava">
+              <a data-start="11:30" data-end="13:00"  data-content="event-rowing-workout" data-event="event-2" href="#0">
+                <em class="cd-schedule__name">Java<br>(laborator)<br>327/4</em>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="cd-schedule-modal">
+      <header class="cd-schedule-modal__header">
+        <div class="cd-schedule-modal__content">
+          <span class="cd-schedule-modal__date"></span>
+          <h3 class="cd-schedule-modal__name"></h3>
+        </div>
+  
+        <div class="cd-schedule-modal__header-bg"></div>
+      </header>
+  
+      <div class="cd-schedule-modal__body">
+        <div class="cd-schedule-modal__event-info"></div>
+        <div class="cd-schedule-modal__body-bg"></div>
+      </div>
+  
+      <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+    </div>
+  
+    <div class="cd-schedule__cover-layer"></div>
+  </div> <!-- .cd-schedule -->
+
+  <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    startDate = new Date(2017,0,2); //first Monday of the year
+    currentDate = new Date(); 
+    weekNumber=Math.ceil((currentDate.getTime()-startDate.getTime())/86400000/7);
+    var ascunde = weekNumber % 2
+    if(ascunde == 0) {
+      document.getElementById("parDaw").style.display = "none";
+    document.getElementById("parJava").style.display = "none";}
+     else{document.getElementById("").style.display = "none";
+     document.getElementById("").style.display = "none";}
+   </script>
+</body>
+</html>
