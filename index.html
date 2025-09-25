@@ -15,7 +15,7 @@
     startDate = new Date(2017,0,2); //first Monday of the year
     currentDate = new Date(); 
     weekNumber=Math.ceil((currentDate.getTime()-startDate.getTime())/86400000/7);
-    document.write("<div style='color:lightblue;text-align:center;font-style:italic;font-size:35px;'> Acum e saptamana "+((weekNumber % 2)? firstName : secondName) +"");
+    document.write("<div style='color:lightblue;text-align:center;font-style:italic;font-size:35px;'> Acum e saptamana "+((weekNumber % 2)? secondName : firstName) +"");
     var ascunde = weekNumber % 2
     if(ascunde == 0) {
       document.getElementById("nimic").style.display = "none";
@@ -56,132 +56,122 @@
   
     <div class="cd-schedule__events">
       <ul>
+        <!-- Luni -->
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>Luni</span></div>
-  
           <ul>
-
-
-
-                        <li class="cd-schedule__event">
-              <a data-start="16:45" data-end="18:15" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Aspecte etice în Informatică <br>404/4 (curs)</em>
+            <li class="cd-schedule__event">
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Sisteme de gestiune a bazelor de date<br>A. Pintea | 213</em>
               </a>
             </li>
-  
-
-        
-              <li class="cd-schedule__event">
-              <a data-start="18:30" data-end="20:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Limbaje formale și automate <br>113/4 (curs)</em>
+            <li class="cd-schedule__event">
+              <a data-start="13:30" data-end="15:00" href="#0">
+                <em class="cd-schedule__name">Fizica<br>A. Mihălachi | 213</em>
               </a>
             </li>
-                </ul>
-        </li>  
-
+            <li class="cd-schedule__event casepar" >
+              <a data-start="15:15" data-end="16:45" href="#0">
+                <em class="cd-schedule__name">EPS<br>M. Ciobanu | I-04</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event aplicatiipar" >
+              <a data-start="15:15" data-end="16:45" href="#0">
+                <em class="cd-schedule__name">Matematica<br>V. Guci | I-04</em>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- Marti -->
         <li class="cd-schedule__group">
-          <div class="cd-schedule__top-info"><span>Marti</span></div>
-  
+          <div class="cd-schedule__top-info"><span>Marți</span></div>
           <ul>
-  
-                        <li class="cd-schedule__event">
-              <a data-start="16:45" data-end="18:15" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Tehn.CASE (lab) <br>143/4</em>
+            <li class="cd-schedule__event">
+              <a data-start="09:45" data-end="11:15" href="#0">
+                <em class="cd-schedule__name">Limba franceză<br>L. Bivol | 108</em>
               </a>
             </li>
-  
-
-        
-              <li class="cd-schedule__event">
-              <a data-start="18:30" data-end="20:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">LFA (lab) <br>213a/4</em>
+            <li class="cd-schedule__event" class="casepar">
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Educația fizică</em>
               </a>
             </li>
-                </ul>
-        </li>      
-        
+            <li class="cd-schedule__event" class="aplicatiipar">
+              <a data-start="13:30" data-end="15:00" href="#0">
+                <em class="cd-schedule__name">Limba română<br>T. Zaoorodniuc | 308</em>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- Miercuri -->
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>Miercuri</span></div>
-  
           <ul>
-              <li class="cd-schedule__event">
-              <a data-start="11:30" data-end="13:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Etica (sem)<br>404/4</em>
+            <li class="cd-schedule__event">
+              <a data-start="08:00" data-end="09:30" href="#0">
+                <em class="cd-schedule__name">Bazele legislației<br>R. Bîrlădeanu | 213</em>
               </a>
             </li>
-                          <li class="cd-schedule__event">
-              <a data-start="13:15" data-end="14:45" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Tehn. CASE (curs) <br>401/4</em>
+            <li class="cd-schedule__event">
+              <a data-start="09:45" data-end="11:15" href="#0">
+                <em class="cd-schedule__name">Matematica<br>V. Guci | 213</em>
               </a>
             </li>
-                          <li class="cd-schedule__event">
-              <a data-start="15:00" data-end="16:30" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Cript.și secur.inf.(lab) <br>254/4</em>
+            <li class="cd-schedule__event">
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Informatica<br>A. Pintea | 213</em>
               </a>
             </li>
-                          <li class="cd-schedule__event">
-              <a data-start="16:45" data-end="18:15" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">Limbaje formale și automate (curs) <br>113/4</em>
-              </a>
-            </li>
-            
-       </ul>
-       </li>
-
-
-  
+          </ul>
+        </li>
+        <!-- Joi -->
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>Joi</span></div>
-  
           <ul>
-            <li class="cd-schedule__event"  id="casepar">
-              <a data-start="15:00" data-end="16:30"  data-content="event-restorative-yoga" data-event="event-4" href="">
-                <em class="cd-schedule__name">Tehn.CASE (lab,par)<br>251/4</em>
-              </a></li>
-              <li class="cd-schedule__event">
-                <a data-start="16:45" data-end="18:15" data-content="event-yoga-1" data-event="event-3" href="#0">
-                  <em class="cd-schedule__name">Cript.și secur.inf.(lab)<br>254/4</em>
-                </a>
-              </li>
+            <li class="cd-schedule__event">
+              <a data-start="08:00" data-end="09:30" href="#0">
+                <em class="cd-schedule__name">Matematica<br>V. Guci | 308</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event">
+              <a data-start="09:45" data-end="11:15" href="#0">
+                <em class="cd-schedule__name">Limba engleză<br>D. Leahu / L. Samson | 219 / 305</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event casepar" >
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Geografia<br>S. Antoniuc | 104</em>
+              </a>
+            </li>
+            <li class="cd-schedule__event aplicatiipar" >
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Chimia<br>E. Stratulat | 104</em>
+              </a>
+            </li>
           </ul>
         </li>
-  
+        <!-- Vineri -->
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>Vineri</span></div>
-  
           <ul>
-            
-            <li class="cd-schedule__event" id="">
-              <a data-start="15:00" data-end="16:30"  data-content="event-rowing-workout" data-event="event-2" href="#0">
-                <em class="cd-schedule__name">Cript.și secur.inf.(curs)<br>404/4</em>
+            <li class="cd-schedule__event">
+              <a data-start="08:00" data-end="09:30" href="#0">
+                <em class="cd-schedule__name">Sisteme de gestiune a bazelor de date<br>A. Pintea | 307</em>
               </a>
             </li>
-            <li class="cd-schedule__event"  id="">
-              <a data-start="16:45" data-end="18:15" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">LFA(lab)<br>113/4</em>
+            <li class="cd-schedule__event">
+              <a data-start="09:45" data-end="11:15" href="#0">
+                <em class="cd-schedule__name">Utilizarea sistemelor de operare în rețea<br>L. Peca | 313</em>
               </a>
             </li>
-
-          </ul>
-        </li>
-        <li class="cd-schedule__group">
-          <div class="cd-schedule__top-info"><span>Sâmbăta</span></div>
-  
-          <ul>
-            
-            <li class="cd-schedule__event" id="">
-              <a data-start="09:45" data-end="11:15"  data-content="event-rowing-workout" data-event="event-2" href="#0">
-                <em class="cd-schedule__name">Aplicații p/u DM(curs)<br>218/4</em>
+            <li class="cd-schedule__event casepar" >
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Istoria<br>R. Bîrlădeanu | 109</em>
               </a>
             </li>
-            <li class="cd-schedule__event" id="">
-              <a data-start="11:30" data-end="13:00"  data-content="event-rowing-workout" data-event="event-2" href="#0">
-                <em class="cd-schedule__name">Aplicații p/u DM(lab)<br>143/4</em>
-              </a>
-            </li>
-            <li class="cd-schedule__event" id="aplicatiipar">
-              <a data-start="13:15" data-end="14:45"  data-content="event-rowing-workout" data-event="event-2" href="#0">
-                <em class="cd-schedule__name">Aplicații p/u DM (lab,par)<br>143/4</em>
+            <li class="cd-schedule__event aplicatiipar" >
+              <a data-start="11:30" data-end="13:00" href="#0">
+                <em class="cd-schedule__name">Limba română<br>T. Zaoorodniuc | 109</em>
               </a>
             </li>
           </ul>
@@ -213,15 +203,28 @@
   <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
   <script src="assets/js/main.js"></script>
   <script type="text/javascript">
-    startDate = new Date(2017,0,2); //first Monday of the year
+    startDate = new Date(2017,0,2); // first Monday of the year
     currentDate = new Date(); 
-    weekNumber=Math.ceil((currentDate.getTime()-startDate.getTime())/86400000/7);
-    var ascunde = weekNumber % 2
-    if(ascunde == 0) {
-      document.getElementById("casepar").style.display = "none";
-    document.getElementById("aplicatiipar").style.display = "none";}
-     else{document.getElementById("").style.display = "none";
-     document.getElementById("").style.display = "none";}
-   </script>
+    weekNumber = Math.ceil((currentDate.getTime() - startDate.getTime()) / 86400000 / 7);
+    var ascunde = weekNumber % 2;
+
+    if (ascunde != 0) {
+        // Săptămâna pară: ascunde aplicatiipar, arată casepar
+        document.querySelectorAll('.casepar').forEach(function(el) {
+            el.style.display = '';
+        });
+        document.querySelectorAll('.aplicatiipar').forEach(function(el) {
+            el.style.display = 'none';
+        });
+    } else {
+        // Săptămâna impară: ascunde casepar, arată aplicatiipar
+        document.querySelectorAll('.casepar').forEach(function(el) {
+            el.style.display = 'none';
+        });
+        document.querySelectorAll('.aplicatiipar').forEach(function(el) {
+            el.style.display = '';
+        });
+    }
+</script>
 </body>
 </html>
